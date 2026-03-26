@@ -90,6 +90,6 @@ public class Questions {
 
     @Override
     public String toString() {
-        return qid+". "+text+"\n A."+optionA+"\n B."+optionB+"\n C."+optionC+"\n D."+optionD+"\n E."+optionE;
+        return qid+". "+text+"\n A."+optionA+"\n B."+optionB+"\n C."+optionC+"\n D."+optionD+"\n E."+optionE+"\n \n";
     }
 }

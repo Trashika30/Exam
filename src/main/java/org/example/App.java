@@ -74,12 +74,16 @@ public class App
             int op=sc.nextInt();sc.nextLine();
             switch(op) {
                 case 1:
-                    
                     ser.addMember();
                     break;
                 case 2:
                     ser.takeExam();
                     break;
+                default:
+                    System.out.println("Wrong choice");
+                    sc.close();
+                    System.exit(0);
+
             }
         }
     }

@@ -50,13 +50,17 @@ public class MemberDAO {
                 System.out.println(q);
                 System.out.println("Enter your answer:");
                 String ans=sc.nextLine();
+
                 if(ans.equalsIgnoreCase(q.getAnswer())){
                     marks++;
+                    System.out.println("Great!");
                 }
-
+                else{
+                    System.out.println("Wrong answer!");
+                    System.out.println("Correct option is:"+q.getAnswer());
+                }
             }
             System.out.println("Your score: "+marks+"/"+total);
-
         }
 
         catch(Exception e){
